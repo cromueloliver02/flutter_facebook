@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/widgets.dart';
 import '../utils/constants.dart';
+import '../data/data.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,6 +14,9 @@ class HomeScreen extends StatelessWidget {
         body: CustomScrollView(
           slivers: [
             FBSliverAppBar(),
+            SliverToBoxAdapter(
+              child: FBCreatePostContainer(loggedUser: loggedUser),
+            ),
           ],
         ),
       ),

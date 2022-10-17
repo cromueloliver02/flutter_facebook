@@ -12,14 +12,17 @@ const kLargeSize = 20.0;
 
 // TEXT STYLES
 const kRegularStyle = TextStyle(
+  color: Colors.black,
   fontSize: kRegularSize,
   fontWeight: FontWeight.normal,
 );
 const kSemiBoldStyle = TextStyle(
+  color: Colors.black,
   fontSize: kRegularSize,
   fontWeight: FontWeight.w600,
 );
 const kBoldStyle = TextStyle(
+  color: Colors.black,
   fontSize: kRegularSize,
   fontWeight: FontWeight.bold,
 );

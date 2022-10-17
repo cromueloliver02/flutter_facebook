@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../screens/screens.dart';
+import '../utils/constants.dart';
 
 class FacebookApp extends StatelessWidget {
   const FacebookApp({super.key});
@@ -9,7 +10,7 @@ class FacebookApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Facebook',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: kLightBackground,
       ),
       home: const HomeScreen(),
     );

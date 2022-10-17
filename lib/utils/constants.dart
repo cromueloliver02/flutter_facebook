@@ -4,7 +4,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 // COLORS
 const kLightPrimary = Color(0xFF1777F2);
 const kLightSecondary = Color(0xFFFFFFFF);
-const kLightBackground = Color(0xFFF0F2F5);
+const kLightBackground = Color.fromARGB(255, 224, 224, 224);
 
 // TEXT SIZES
 const kRegularSize = 16.0;

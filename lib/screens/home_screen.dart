@@ -17,6 +17,9 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(
               child: FBCreatePostContainer(loggedUser: loggedUser),
             ),
+            SliverToBoxAdapter(
+              child: StoriesReelsContainer(loggedUser: loggedUser),
+            ),
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 // COLORS
 const kLightPrimary = Color(0xFF1777F2);
@@ -22,3 +23,13 @@ const kBoldStyle = TextStyle(
   fontSize: kRegularSize,
   fontWeight: FontWeight.bold,
 );
+
+// MENU ICONS
+const menuIcons = [
+  Icons.home,
+  Icons.ondemand_video,
+  MdiIcons.accountCircleOutline,
+  MdiIcons.accountGroupOutline,
+  MdiIcons.bellOutline,
+  Icons.menu,
+];

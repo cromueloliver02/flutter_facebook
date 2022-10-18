@@ -42,9 +42,8 @@ class FBPostCard extends StatelessWidget {
                   const SizedBox(height: 10),
                   CachedNetworkImage(
                     imageUrl: post.imageUrl!,
-                    height: 550,
                     width: double.infinity,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.contain,
                   ),
                 ],
               ],

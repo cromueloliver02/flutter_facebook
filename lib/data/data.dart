@@ -54,6 +54,11 @@ const List<User> onlineUsers = [
     name: 'Megumi Kato',
     imageUrl: 'https://i1.sndcdn.com/artworks-000231694472-sko6fi-t500x500.jpg',
   ),
+  User(
+    name: 'Yor Forger',
+    imageUrl:
+        'https://fictionhorizon.com/wp-content/uploads/2022/05/maxresdefault-2-2-1024x576.jpg',
+  ),
 ];
 
 final List<Story> stories = [
@@ -114,61 +119,72 @@ final List<Story> stories = [
 final List<Post> posts = [
   const Post(
     user: loggedUser,
-    caption: 'Check out these cool puppers',
+    caption: 'Same energy 😂🤣🤣',
     timeAgo: '58m',
-    imageUrl: 'https://images.unsplash.com/photo-1525253086316-d0c936c814f8',
+    imageUrl:
+        'https://scontent.fmnl6-2.fna.fbcdn.net/v/t39.30808-6/311836887_1531517003963447_7216888072498081112_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=W-6XhuswNoQAX-VOh_m&_nc_oc=AQkvwbyQQ6T7JpWmdtbV4KAT_wKiXLFtwsU6AZqcphay2p7hStML_bKeS6ug6Ba_ULM&_nc_ht=scontent.fmnl6-2.fna&oh=00_AT8JJnnbFuDlloEqC1AuueA14IvpXJUTPISQt6jxxg-t8A&oe=6353DA3C',
     likes: 1202,
     comments: 184,
     shares: 96,
   ),
   Post(
-    user: onlineUsers[5],
-    caption:
-        'Please enjoy this placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    timeAgo: '3hr',
-    imageUrl: null,
-    likes: 683,
-    comments: 79,
-    shares: 18,
-  ),
-  Post(
-    user: onlineUsers[4],
-    caption: 'This is a very good boi.',
-    timeAgo: '8hr',
-    imageUrl:
-        'https://images.unsplash.com/photo-1575535468632-345892291673?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-    likes: 894,
-    comments: 201,
-    shares: 27,
-  ),
-  Post(
     user: onlineUsers[3],
-    caption: 'Adventure 🏔',
+    caption:
+        "Inside my heart there was another me who was squealing while running around. There's no more mistaking it. I just have to admit it now. Seriously, seriously, seriously, my heart's seriously been stolen away. The arrow which had pierced my heart. The arrow of love which I could no longer take out. Is this even possible? Is it even fine for me to fall in love with someone who's been partly bullying me? But it's already too late. The power of this arrow is tremendous. I have, I have towards Kiyotaka-----really, seriously, I've fallen in love with him.",
     timeAgo: '15hr',
-    imageUrl:
-        'https://images.unsplash.com/photo-1573331519317-30b24326bb9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+    imageUrl: null,
     likes: 722,
     comments: 183,
     shares: 42,
   ),
   Post(
+    user: onlineUsers[5],
+    caption: 'Hashiras',
+    timeAgo: '3hr',
+    imageUrl:
+        'https://i.pinimg.com/originals/85/64/c1/8564c1612fabf10318920ffd14ade44e.jpg',
+    likes: 683,
+    comments: 79,
+    shares: 18,
+  ),
+  Post(
+    user: onlineUsers[10],
+    caption: 'Our daughter loves her new Bond(dog) so much ❤️',
+    timeAgo: '2m',
+    imageUrl:
+        'https://animecorner.me/wp-content/uploads/2022/10/spy-x-family-part-2-ending-anya-bond.jpg',
+    likes: 994,
+    comments: 892,
+    shares: 720,
+  ),
+  Post(
+    user: onlineUsers[4],
+    caption: 'Chainsaw Man episode 2 preview',
+    timeAgo: '8hr',
+    imageUrl:
+        'https://www.theanimedaily.com/wp-content/uploads/2022/10/Chainsaw-Man-Episode-2-1024x567.jpg',
+    likes: 894,
+    comments: 201,
+    shares: 27,
+  ),
+  Post(
     user: onlineUsers[0],
-    caption:
-        'More placeholder text for the soul: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    caption: 'Date',
     timeAgo: '1d',
-    imageUrl: null,
+    imageUrl:
+        'https://sportshub.cbsistatic.com/i/2021/04/09/25c76673-1411-4ff0-b296-263b23811aa6/my-teen-romantic-comedy-snafu-oregairu-ending-reactions-yukino-h-1238531.jpg',
     likes: 482,
     comments: 37,
     shares: 9,
   ),
   Post(
     user: onlineUsers[9],
-    caption: 'A classic.',
+    caption:
+        "It’s not like I want something like a confession. I’m fine with a chance to fall in love, just a little. I just want simple, casual words. Words that can make one say, “ah, so I could fall in love just like that.",
     timeAgo: '1d',
-    imageUrl:
-        'https://images.unsplash.com/reserve/OlxPGKgRUaX0E1hg3b3X_Dumbo.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+    imageUrl: null,
     likes: 1523,
     shares: 129,
     comments: 301,
-  )
+  ),
 ];

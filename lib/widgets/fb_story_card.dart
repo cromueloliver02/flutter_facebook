@@ -45,7 +45,9 @@ class FBStoryCard extends StatelessWidget {
               backgroundColor: kLightPrimary,
               radius: 23,
               child: CircleAvatar(
-                backgroundImage: CachedNetworkImageProvider(story.imageUrl),
+                backgroundImage: CachedNetworkImageProvider(
+                  story.user.imageUrl,
+                ),
                 radius: 20,
               ),
             ),

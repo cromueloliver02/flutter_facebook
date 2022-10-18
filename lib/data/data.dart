@@ -1,166 +1,113 @@
 import '../models/models.dart';
 
 const loggedUser = User(
-  name: 'John Doe',
+  name: 'Cromuel Barut',
   imageUrl:
-      'https://images.unsplash.com/photo-1578133671540-edad0b3d689e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
+      'https://i.pinimg.com/originals/b5/e2/02/b5e202526684a6cef81c910e27bc58be.jpg',
 );
 
 const List<User> onlineUsers = [
   User(
-    name: 'David Brooks',
-    imageUrl:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+    name: 'Yukino Yukinoshita',
+    imageUrl: 'https://i.ytimg.com/vi/6aj_H4xdteU/maxresdefault.jpg',
   ),
   User(
-    name: 'Jane Doe',
+    name: 'Arisu Sakayanagi',
     imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://steamuserimages-a.akamaihd.net/ugc/867367113420353262/54B94546315296DC4AA91E55137B74D4CF7A1FE4/?imw=1024&imh=695&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
   ),
   User(
-    name: 'Matthew Hinkle',
+    name: 'Kasumigaoka Utaha',
     imageUrl:
-        'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
+        'https://i.pinimg.com/originals/3f/7c/68/3f7c6814ed1a1d1373f2f05e8a11450c.jpg',
   ),
   User(
-    name: 'Amy Smith',
+    name: 'Kei Karuizawa',
     imageUrl:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
+        'https://external-preview.redd.it/Vft7YJWwLp4O6Ucy1MbWNlTqFWnMQUoNbaAzHvMAOxQ.png?width=640&crop=smart&format=pjpg&auto=webp&s=07dad7196f9744e892cd7e89ad78cc071e64ecf9',
   ),
   User(
-    name: 'Ed Morris',
+    name: 'Eriri Spencer Sawamura',
     imageUrl:
-        'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
+        'https://64.media.tumblr.com/1e815e2370448fe320d50c0c19f19448/tumblr_pczq1vLuV41x2q4f4o1_1280.jpg',
   ),
   User(
-    name: 'Carolyn Duncan',
-    imageUrl:
-        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-  ),
-  User(
-    name: 'Paul Pinnock',
-    imageUrl:
-        'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-  ),
-  User(
-      name: 'Elizabeth Wong',
+      name: 'Shinobu Kocho',
       imageUrl:
-          'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'),
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDaczijEGXnU27mbATmZJQxkco0HEwT58Hbg&usqp=CAU'),
   User(
-    name: 'James Lathrop',
+    name: 'Sumireko Sanshokuin',
     imageUrl:
-        'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
+        'https://static.wikia.nocookie.net/oresuki/images/2/27/Sumireko_Pansy.PNG/revision/latest?cb=20191011191726',
   ),
   User(
-    name: 'Jessie Samson',
+    name: 'Kiyotaka Ayanokoji',
     imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://i.pinimg.com/736x/f8/d5/df/f8d5dfc6be0b8ee7627372e059d1d30d.jpg',
   ),
   User(
-    name: 'David Brooks',
+    name: 'Kurumi Walnut',
     imageUrl:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://animecorner.me/wp-content/uploads/2021/10/Tokisaki-Kurumi-FIgure.jpg',
   ),
   User(
-    name: 'Jane Doe',
-    imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-  ),
-  User(
-    name: 'Matthew Hinkle',
-    imageUrl:
-        'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
-  ),
-  User(
-    name: 'Amy Smith',
-    imageUrl:
-        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
-  ),
-  User(
-    name: 'Ed Morris',
-    imageUrl:
-        'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
-  ),
-  User(
-    name: 'Carolyn Duncan',
-    imageUrl:
-        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-  ),
-  User(
-    name: 'Paul Pinnock',
-    imageUrl:
-        'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-  ),
-  User(
-      name: 'Elizabeth Wong',
-      imageUrl:
-          'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'),
-  User(
-    name: 'James Lathrop',
-    imageUrl:
-        'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
-  ),
-  User(
-    name: 'Jessie Samson',
-    imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+    name: 'Megumi Kato',
+    imageUrl: 'https://i1.sndcdn.com/artworks-000231694472-sko6fi-t500x500.jpg',
   ),
 ];
 
 final List<Story> stories = [
   Story(
-    user: onlineUsers[2],
+    user: onlineUsers[0],
     imageUrl:
-        'https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80',
+        'https://w0.peakpx.com/wallpaper/319/638/HD-wallpaper-yukinon-anime-oregairu-otaku-yukinoshita-thumbnail.jpg',
   ),
   Story(
-    user: onlineUsers[6],
+    user: onlineUsers[1],
     imageUrl:
-        'https://images.unsplash.com/photo-1499363536502-87642509e31b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://static.wikia.nocookie.net/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e/images/7/77/Episode_007_End_Card.jpg/revision/latest?cb=20170911092517',
     isViewed: true,
-  ),
-  Story(
-    user: onlineUsers[3],
-    imageUrl:
-        'https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=624&q=80',
-  ),
-  Story(
-    user: onlineUsers[9],
-    imageUrl:
-        'https://images.unsplash.com/photo-1496950866446-3253e1470e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    isViewed: true,
-  ),
-  Story(
-    user: onlineUsers[7],
-    imageUrl:
-        'https://images.unsplash.com/photo-1475688621402-4257c812d6db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
   ),
   Story(
     user: onlineUsers[2],
     imageUrl:
-        'https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80',
-  ),
-  Story(
-    user: onlineUsers[6],
-    imageUrl:
-        'https://images.unsplash.com/photo-1499363536502-87642509e31b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://i.pinimg.com/originals/e8/0f/a5/e80fa5ff6cd4fcf62999578e7b430258.jpg',
     isViewed: true,
   ),
   Story(
     user: onlineUsers[3],
-    imageUrl:
-        'https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=624&q=80',
+    imageUrl: 'https://i.ytimg.com/vi/zrbFI4JG28I/maxresdefault.jpg',
   ),
   Story(
-    user: onlineUsers[9],
+    user: onlineUsers[4],
     imageUrl:
-        'https://images.unsplash.com/photo-1496950866446-3253e1470e8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    isViewed: true,
+        'https://steamuserimages-a.akamaihd.net/ugc/834706451775996104/DF2036CB362551D87CED0F2DDCA1FF941C8BDA3D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
+  ),
+  Story(
+    user: onlineUsers[5],
+    imageUrl: 'https://wallpaperaccess.com/full/1488739.png',
+  ),
+  Story(
+    user: onlineUsers[6],
+    imageUrl:
+        'http://cdn.shopify.com/s/files/1/1358/9279/collections/Oresuki_peek_001_1200x1200.jpg?v=1641305772',
   ),
   Story(
     user: onlineUsers[7],
     imageUrl:
-        'https://images.unsplash.com/photo-1475688621402-4257c812d6db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
+        'http://pm1.narvii.com/7651/fb4bfce64a7a9f9eafe80650f88e13b7991498cbr1-1556-2048v2_00.jpg',
+    isViewed: true,
+  ),
+  Story(
+    user: onlineUsers[8],
+    imageUrl:
+        'https://i.pinimg.com/564x/d6/5a/a9/d65aa9e88876e92343354e1139890063.jpg',
+  ),
+  Story(
+    user: onlineUsers[9],
+    imageUrl:
+        'https://i.pinimg.com/originals/34/b7/4e/34b74ee3bd69e59f38e26b8dcdacd0f3.jpg',
+    isViewed: true,
   ),
 ];
 

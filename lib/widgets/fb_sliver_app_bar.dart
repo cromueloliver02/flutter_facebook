@@ -12,6 +12,10 @@ class FBSliverAppBar extends StatelessWidget {
     final screenSize = MediaQuery.of(context).size;
 
     return SliverAppBar(
+      floating: true,
+      pinned: true,
+      // primary: true,
+      // snap: true,
       backgroundColor: kLightSecondary,
       centerTitle: false,
       title: const Text(

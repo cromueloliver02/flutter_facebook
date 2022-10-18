@@ -16,7 +16,9 @@ class FBCircleButton extends StatelessWidget {
       onTap: onPressed,
       child: Container(
         margin: const EdgeInsets.all(6),
-        padding: const EdgeInsets.all(6),
+        height: 38,
+        width: 38,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
           color: Colors.grey[200],
           shape: BoxShape.circle,

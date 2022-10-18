@@ -131,7 +131,10 @@ class _FBPostCardFooter extends StatelessWidget {
     return Column(
       children: [
         _FBPostCardStatisticBar(post: post),
-        const Divider(thickness: 1),
+        const Divider(
+          thickness: 1,
+          height: 0,
+        ),
         Padding(
           padding: const EdgeInsets.all(10),
           child: Row(

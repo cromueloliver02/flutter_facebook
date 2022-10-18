@@ -7,6 +7,7 @@ export 'fb_create_story_card.dart';
 export 'fb_story_card.dart';
 export 'fb_profile_avatar.dart';
 export 'fb_post_card.dart';
-export 'fb_post_card_button.dart';
+export 'fb_post_card_menu_button.dart';
+export 'fb_post_card_action_button.dart';
 export 'fb_post_card_dot.dart';
 export 'fb_post_card_reaction.dart';

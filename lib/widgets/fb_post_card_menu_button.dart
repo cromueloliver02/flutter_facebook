@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class FBPostCardButton extends StatelessWidget {
+class FBPostCardMenuButton extends StatelessWidget {
   final IconData iconData;
   final VoidCallback onPressed;
 
-  const FBPostCardButton({
+  const FBPostCardMenuButton({
     super.key,
     required this.iconData,
     required this.onPressed,

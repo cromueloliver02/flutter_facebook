@@ -30,13 +30,11 @@ class FBPostCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.fromLTRB(
-                    10,
-                    5,
-                    10,
-                    post.imageUrl == null ? 0 : 5,
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Text(
+                    post.caption,
+                    style: kRegularStyle,
                   ),
-                  child: Text(post.caption),
                 ),
                 if (post.imageUrl != null) ...[
                   const SizedBox(height: 10),

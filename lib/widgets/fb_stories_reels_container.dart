@@ -56,13 +56,17 @@ class StoriesReelsContainer extends StatelessWidget {
                 physics: const ClampingScrollPhysics(),
                 padding: const EdgeInsets.only(left: 11),
                 scrollDirection: Axis.horizontal,
-                itemCount: stories.length + 1,
+                itemCount: stories.length + 2,
                 itemBuilder: (ctx, idx) {
                   if (idx == 0) {
+                    return const FBMusicStoryCard();
+                  }
+
+                  if (idx == 1) {
                     return FBCreateStoryCard(loggedUser: loggedUser);
                   }
 
-                  final story = stories[idx - 1];
+                  final story = stories[idx - 2];
 
                   return FBStoryCard(story: story);
                 },

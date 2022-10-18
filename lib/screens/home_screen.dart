@@ -27,7 +27,11 @@ class HomeScreen extends StatelessWidget {
                 (ctx, idx) {
                   final post = posts[idx];
 
-                  return FBPostCard(post: post);
+                  return Container(
+                    margin: EdgeInsets.only(
+                        bottom: posts.length - 1 == idx ? 20 : 0),
+                    child: FBPostCard(post: post),
+                  );
                 },
               ),
             ),

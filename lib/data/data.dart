@@ -149,13 +149,23 @@ final List<Post> posts = [
   ),
   Post(
     user: onlineUsers[10],
-    caption: 'Our daughter loves her new Bond(dog) so much ❤️',
+    caption: 'Our daughter loves our new Bond(dog) so much ❤️',
     timeAgo: '2m',
     imageUrl:
         'https://animecorner.me/wp-content/uploads/2022/10/spy-x-family-part-2-ending-anya-bond.jpg',
     likes: 994,
     comments: 892,
     shares: 720,
+  ),
+  Post(
+    user: onlineUsers[9],
+    caption:
+        "It’s not like I want something like a confession. I’m fine with a chance to fall in love, just a little. I just want simple, casual words. Words that can make one say, “ah, so I could fall in love just like that.",
+    timeAgo: '1d',
+    imageUrl: null,
+    likes: 1523,
+    shares: 129,
+    comments: 301,
   ),
   Post(
     user: onlineUsers[4],
@@ -176,15 +186,5 @@ final List<Post> posts = [
     likes: 482,
     comments: 37,
     shares: 9,
-  ),
-  Post(
-    user: onlineUsers[9],
-    caption:
-        "It’s not like I want something like a confession. I’m fine with a chance to fall in love, just a little. I just want simple, casual words. Words that can make one say, “ah, so I could fall in love just like that.",
-    timeAgo: '1d',
-    imageUrl: null,
-    likes: 1523,
-    shares: 129,
-    comments: 301,
   ),
 ];

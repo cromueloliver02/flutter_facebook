@@ -139,7 +139,7 @@ class _StoryReelTab extends StatelessWidget {
     return Tab(
       child: Text(
         title,
-        style: kSemiBoldStyle.copyWith(color: Colors.black54),
+        style: kSemiBoldStyle,
       ),
     );
   }

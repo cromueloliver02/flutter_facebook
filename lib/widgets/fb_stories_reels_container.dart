@@ -28,14 +28,14 @@ class _StoriesReelsContainerState extends State<StoriesReelsContainer> {
     return DefaultTabController(
       length: 2,
       child: Container(
-        color: Colors.white,
+        color: kLightSecondary,
         height: 300,
         margin: const EdgeInsets.only(top: 10, bottom: 5),
         child: Column(
           children: [
             DecoratedBox(
               decoration: const BoxDecoration(
-                color: Colors.white,
+                color: kLightSecondary,
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black12,

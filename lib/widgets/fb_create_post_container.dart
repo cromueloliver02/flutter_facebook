@@ -22,7 +22,7 @@ class FBCreatePostContainer extends StatelessWidget {
     );
 
     return Container(
-      color: Colors.white,
+      color: kLightSecondary,
       height: 70,
       padding: const EdgeInsets.all(15),
       child: Row(

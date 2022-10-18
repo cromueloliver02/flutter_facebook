@@ -188,3 +188,16 @@ final List<Post> posts = [
     shares: 9,
   ),
 ];
+
+final List<Reel> reels = [
+  Reel(imageUrl: 'https://cdn.animixplay.to/min/mal/1713/126442.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1764/126627l.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1806/126216l.jpg'),
+  // Reel(imageUrl: ''),
+  // Reel(imageUrl: ''),
+  // Reel(imageUrl: ''),
+  // Reel(imageUrl: ''),
+  // Reel(imageUrl: ''),
+  // Reel(imageUrl: ''),
+  // Reel(imageUrl: ''),
+];

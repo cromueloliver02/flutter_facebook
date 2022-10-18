@@ -4,13 +4,24 @@ import '../widgets/widgets.dart';
 import '../utils/constants.dart';
 import '../data/data.dart';
 
-class StoriesReelsContainer extends StatelessWidget {
+class StoriesReelsContainer extends StatefulWidget {
   final User loggedUser;
 
   const StoriesReelsContainer({
     super.key,
     required this.loggedUser,
   });
+
+  @override
+  State<StoriesReelsContainer> createState() => _StoriesReelsContainerState();
+}
+
+class _StoriesReelsContainerState extends State<StoriesReelsContainer> {
+  final _sliders = const [
+    _StoriesContainer(),
+    _ReelsContainer(),
+  ];
+  var _selectedIdx = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +33,8 @@ class StoriesReelsContainer extends StatelessWidget {
         margin: const EdgeInsets.only(top: 10, bottom: 5),
         child: Column(
           children: [
-            const DecoratedBox(
-              decoration: BoxDecoration(
+            DecoratedBox(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
@@ -34,9 +45,9 @@ class StoriesReelsContainer extends StatelessWidget {
                 ],
               ),
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: TabBar(
-                  indicator: BoxDecoration(
+                  indicator: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(
                         color: kLightPrimary,
@@ -44,37 +55,73 @@ class StoriesReelsContainer extends StatelessWidget {
                       ),
                     ),
                   ),
-                  tabs: [
+                  tabs: const [
                     _StoryReelTab(title: 'Stories'),
                     _StoryReelTab(title: 'Reels'),
                   ],
+                  onTap: (idx) => setState(() => _selectedIdx = idx),
                 ),
               ),
             ),
             Expanded(
-              child: ListView.builder(
-                physics: const ClampingScrollPhysics(),
-                padding: const EdgeInsets.only(left: 11),
-                scrollDirection: Axis.horizontal,
-                itemCount: stories.length + 2,
-                itemBuilder: (ctx, idx) {
-                  if (idx == 0) {
-                    return const FBMusicStoryCard();
-                  }
-
-                  if (idx == 1) {
-                    return FBCreateStoryCard(loggedUser: loggedUser);
-                  }
-
-                  final story = stories[idx - 2];
-
-                  return FBStoryCard(story: story);
-                },
+              child: IndexedStack(
+                index: _selectedIdx,
+                children: _sliders,
               ),
             ),
           ],
         ),
       ),
+    );
+  }
+}
+
+class _StoriesContainer extends StatelessWidget {
+  const _StoriesContainer({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      physics: const ClampingScrollPhysics(),
+      padding: const EdgeInsets.only(left: 11),
+      scrollDirection: Axis.horizontal,
+      itemCount: stories.length + 2,
+      itemBuilder: (ctx, idx) {
+        if (idx == 0) {
+          return const FBMusicStoryCard();
+        }
+
+        if (idx == 1) {
+          return const FBCreateStoryCard(loggedUser: loggedUser);
+        }
+
+        final story = stories[idx - 2];
+
+        return FBStoryCard(story: story);
+      },
+    );
+  }
+}
+
+class _ReelsContainer extends StatelessWidget {
+  const _ReelsContainer({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      physics: const ClampingScrollPhysics(),
+      padding: const EdgeInsets.only(left: 11),
+      scrollDirection: Axis.horizontal,
+      itemCount: reels.length + 1,
+      itemBuilder: (ctx, idx) {
+        if (idx == 0) {
+          return const FBCreateReelCard();
+        }
+
+        final reel = reels[idx - 1];
+
+        return Container();
+      },
     );
   }
 }

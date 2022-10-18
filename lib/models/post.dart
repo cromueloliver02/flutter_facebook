@@ -2,7 +2,7 @@ import '../models/models.dart';
 
 class Post {
   final User user;
-  final String caption;
+  final String? caption;
   final String timeAgo;
   final String? imageUrl;
   final int likes;

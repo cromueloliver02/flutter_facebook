@@ -20,22 +20,26 @@ class FBPostCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 5),
       child: Column(
         children: [
-          _FBPostCardHeader(post: post),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+            child: _FBPostCardHeader(post: post),
+          ),
           Padding(
             padding: EdgeInsets.only(
-              top: 5,
+              top: post.caption != null ? 5 : 0,
               bottom: post.imageUrl != null ? 0 : 10,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Text(
-                    post.caption,
-                    style: kRegularStyle,
+                if (post.caption != null)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    child: Text(
+                      post.caption!,
+                      style: kRegularStyle,
+                    ),
                   ),
-                ),
                 if (post.imageUrl != null) ...[
                   const SizedBox(height: 10),
                   CachedNetworkImage(
@@ -64,53 +68,50 @@ class _FBPostCardHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(10),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          ProfileAvatar(imageUrl: post.user.imageUrl),
-          const SizedBox(width: 10),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                post.user.name,
-                style: kSemiBoldStyle.copyWith(fontSize: 18),
-              ),
-              const SizedBox(height: 5),
-              Row(
-                children: [
-                  Text(
-                    post.timeAgo,
-                    style: TextStyle(
-                      color: Colors.grey[600],
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  const FBPostCardDot(),
-                  const SizedBox(width: 10),
-                  Icon(
-                    Icons.public,
-                    size: 15,
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        ProfileAvatar(imageUrl: post.user.imageUrl),
+        const SizedBox(width: 10),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              post.user.name,
+              style: kSemiBoldStyle.copyWith(fontSize: 18),
+            ),
+            const SizedBox(height: 5),
+            Row(
+              children: [
+                Text(
+                  post.timeAgo,
+                  style: TextStyle(
                     color: Colors.grey[600],
-                  )
-                ],
-              ),
-            ],
-          ),
-          const Spacer(),
-          FBPostCardMenuButton(
-            iconData: Icons.more_horiz,
-            onPressed: () {},
-          ),
-          const SizedBox(width: 20),
-          FBPostCardMenuButton(
-            iconData: Icons.close,
-            onPressed: () {},
-          ),
-        ],
-      ),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                const FBPostCardDot(),
+                const SizedBox(width: 10),
+                Icon(
+                  Icons.public,
+                  size: 15,
+                  color: Colors.grey[600],
+                )
+              ],
+            ),
+          ],
+        ),
+        const Spacer(),
+        FBPostCardMenuButton(
+          iconData: Icons.more_horiz,
+          onPressed: () {},
+        ),
+        const SizedBox(width: 20),
+        FBPostCardMenuButton(
+          iconData: Icons.close,
+          onPressed: () {},
+        ),
+      ],
     );
   }
 }

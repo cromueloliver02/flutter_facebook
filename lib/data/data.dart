@@ -187,6 +187,16 @@ final List<Post> posts = [
     comments: 37,
     shares: 9,
   ),
+  Post(
+    user: onlineUsers[3],
+    caption: null,
+    timeAgo: '4h',
+    imageUrl:
+        'https://external-preview.redd.it/Vft7YJWwLp4O6Ucy1MbWNlTqFWnMQUoNbaAzHvMAOxQ.png?width=640&crop=smart&format=pjpg&auto=webp&s=07dad7196f9744e892cd7e89ad78cc071e64ecf9',
+    likes: 482,
+    comments: 37,
+    shares: 9,
+  ),
 ];
 
 final List<Reel> reels = [

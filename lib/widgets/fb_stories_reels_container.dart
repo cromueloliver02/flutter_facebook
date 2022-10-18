@@ -120,7 +120,7 @@ class _ReelsContainer extends StatelessWidget {
 
         final reel = reels[idx - 1];
 
-        return Container();
+        return FBReelCard(reel: reel);
       },
     );
   }

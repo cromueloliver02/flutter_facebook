@@ -179,7 +179,7 @@ final List<Post> posts = [
   ),
   Post(
     user: onlineUsers[0],
-    caption: 'Date',
+    caption: 'Milktea date ❤️❤️❤️',
     timeAgo: '1d',
     imageUrl:
         'https://sportshub.cbsistatic.com/i/2021/04/09/25c76673-1411-4ff0-b296-263b23811aa6/my-teen-romantic-comedy-snafu-oregairu-ending-reactions-yukino-h-1238531.jpg',
@@ -193,11 +193,11 @@ final List<Reel> reels = [
   Reel(imageUrl: 'https://cdn.animixplay.to/min/mal/1713/126442.jpg'),
   Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1764/126627l.jpg'),
   Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1806/126216l.jpg'),
-  // Reel(imageUrl: ''),
-  // Reel(imageUrl: ''),
-  // Reel(imageUrl: ''),
-  // Reel(imageUrl: ''),
-  // Reel(imageUrl: ''),
-  // Reel(imageUrl: ''),
-  // Reel(imageUrl: ''),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1187/128505l.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1091/128729l.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1498/121952l.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1228/125011l.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1029/128722l.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1256/128714l.jpg'),
+  Reel(imageUrl: 'https://cdn.myanimelist.net/images/anime/1119/127385l.jpg'),
 ];

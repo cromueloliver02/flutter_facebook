@@ -13,3 +13,4 @@ export 'fb_post_card_action_button.dart';
 export 'fb_post_card_dot.dart';
 export 'fb_post_card_reaction.dart';
 export 'fb_create_reel_card.dart';
+export 'fb_reel_card.dart';

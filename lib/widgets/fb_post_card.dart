@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import '../models/models.dart';
 import '../widgets/widgets.dart';
 import '../utils/constants.dart';
@@ -19,6 +20,29 @@ class FBPostCard extends StatelessWidget {
       child: Column(
         children: [
           _FBPostCardHeader(post: post),
+          Padding(
+            padding: const EdgeInsets.only(top: 5, bottom: 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Text(
+                    post.caption,
+                  ),
+                ),
+                if (post.imageUrl != null) ...[
+                  const SizedBox(height: 10),
+                  CachedNetworkImage(
+                    imageUrl: post.imageUrl!,
+                    height: 550,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                  ),
+                ],
+              ],
+            ),
+          ),
         ],
       ),
     );

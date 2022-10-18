@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import '../models/models.dart';
+import '../widgets/widgets.dart';
 import '../utils/constants.dart';
 
 class FBCreatePostContainer extends StatelessWidget {
@@ -27,11 +27,7 @@ class FBCreatePostContainer extends StatelessWidget {
       padding: const EdgeInsets.all(15),
       child: Row(
         children: [
-          CircleAvatar(
-            backgroundImage: CachedNetworkImageProvider(loggedUser.imageUrl),
-            backgroundColor: Colors.grey[200],
-            radius: 20,
-          ),
+          ProfileAvatar(imageUrl: loggedUser.imageUrl),
           const SizedBox(width: 10),
           const Expanded(
             child: TextField(

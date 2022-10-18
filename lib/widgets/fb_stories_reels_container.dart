@@ -19,7 +19,7 @@ class StoriesReelsContainer extends StatelessWidget {
       child: Container(
         color: Colors.white,
         height: 300,
-        margin: const EdgeInsets.symmetric(vertical: 15),
+        margin: const EdgeInsets.only(top: 10, bottom: 5),
         child: Column(
           children: [
             const DecoratedBox(

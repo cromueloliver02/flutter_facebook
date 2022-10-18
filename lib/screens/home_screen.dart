@@ -10,15 +10,25 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: menuIcons.length,
-      child: const Scaffold(
+      child: Scaffold(
         body: CustomScrollView(
           slivers: [
-            FBSliverAppBar(),
-            SliverToBoxAdapter(
+            const FBSliverAppBar(),
+            const SliverToBoxAdapter(
               child: FBCreatePostContainer(loggedUser: loggedUser),
             ),
-            SliverToBoxAdapter(
+            const SliverToBoxAdapter(
               child: StoriesReelsContainer(loggedUser: loggedUser),
+            ),
+            SliverList(
+              delegate: SliverChildBuilderDelegate(
+                childCount: posts.length,
+                (ctx, idx) {
+                  final post = posts[idx];
+
+                  return FBPostCard(post: post);
+                },
+              ),
             ),
           ],
         ),

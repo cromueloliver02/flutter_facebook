@@ -21,15 +21,21 @@ class FBPostCard extends StatelessWidget {
         children: [
           _FBPostCardHeader(post: post),
           Padding(
-            padding: const EdgeInsets.only(top: 5, bottom: 10),
+            padding: EdgeInsets.only(
+              top: 5,
+              bottom: post.imageUrl != null ? 0 : 10,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Text(
-                    post.caption,
+                  padding: EdgeInsets.fromLTRB(
+                    10,
+                    10,
+                    10,
+                    post.imageUrl == null ? 0 : 10,
                   ),
+                  child: Text(post.caption),
                 ),
                 if (post.imageUrl != null) ...[
                   const SizedBox(height: 10),
@@ -43,6 +49,7 @@ class FBPostCard extends StatelessWidget {
               ],
             ),
           ),
+          _FBPostCardFooter(post: post),
         ],
       ),
     );
@@ -83,14 +90,7 @@ class _FBPostCardHeader extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 10),
-                  Container(
-                    width: 5,
-                    height: 5,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[600],
-                      shape: BoxShape.circle,
-                    ),
-                  ),
+                  const FBPostCardDot(),
                   const SizedBox(width: 10),
                   Icon(
                     Icons.public,
@@ -110,6 +110,55 @@ class _FBPostCardHeader extends StatelessWidget {
           FBPostCardButton(
             iconData: Icons.close,
             onPressed: () {},
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _FBPostCardFooter extends StatelessWidget {
+  final Post post;
+
+  const _FBPostCardFooter({
+    Key? key,
+    required this.post,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(10),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              const FBPostCardReaction(
+                iconData: Icons.thumb_up,
+                color: kLightPrimary,
+              ),
+              const FBPostCardReaction(
+                iconData: Icons.favorite,
+                color: Color.fromARGB(255, 248, 76, 64),
+              ),
+              const SizedBox(width: 5),
+              Text(
+                '${post.likes}',
+                style: TextStyle(color: Colors.grey[600]),
+              ),
+              const Spacer(),
+              Text(
+                '${post.comments} Comments',
+                style: TextStyle(color: Colors.grey[600]),
+              ),
+              const SizedBox(width: 10),
+              const FBPostCardDot(),
+              const SizedBox(width: 10),
+              Text(
+                '${post.shares} Shares',
+                style: TextStyle(color: Colors.grey[600]),
+              ),
+            ],
           ),
         ],
       ),

@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
       length: menuIcons.length,
       child: Scaffold(
         body: CustomScrollView(
+          physics: const ClampingScrollPhysics(),
           slivers: [
             const FBSliverAppBar(),
             const SliverToBoxAdapter(
